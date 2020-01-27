@@ -63,7 +63,6 @@ describe("getRecommendations", () => {
     // act
     const result = getRecommendations(users, venues);
     // assert
-    console.log(result);
     expect(result).toEqual({
       recommendations: [{ ...venues[2] }],
       notRecommended: [
