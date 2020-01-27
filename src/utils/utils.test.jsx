@@ -1,5 +1,12 @@
 import { filterBadMatches, getRecommendations } from "./utils";
 
+/* 
+  Note, this is only a JSX file because I wanted quick fix 
+  to ensure the test runner would pick these tests up along
+  with the component tests, didn't want to waste too much time
+  fiddling with test configurations in this exercise!
+*/
+
 describe("filterBadMatches", () => {
   it("should return an empty object if all user preferences are satisfied", () => {
     // arrange
