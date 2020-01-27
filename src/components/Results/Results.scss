@@ -1,0 +1,25 @@
+.results-container {
+  text-align: center;
+
+  &--recommended {
+    background-color: rgb(201, 235, 218);
+    margin-bottom: 10px;
+    padding: 20px
+  }
+  &--not-recommended {
+    background-color: rgb(228, 158, 126);
+    padding: 20px;
+    
+    &--item {
+      ul {
+        font-size: 14px;
+        list-style-type: none;
+        padding: 0px;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Results.scss";
 
 export default ({ recommendations, notRecommended }) =>
   recommendations.length ? (
