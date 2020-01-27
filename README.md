@@ -1,6 +1,6 @@
 
 
-# Premise
+# Venue suggestion search - TO developer challenge
 A simple web app that allows you to search from a feed of restaurants from an 'api', and return recommendations based on selected users and their preferences.
 
 ### Quickstart
