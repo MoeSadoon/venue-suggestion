@@ -35,8 +35,7 @@ const Search = () => {
     setSearch({ showReset: false });
   };
 
-  return (
-    users.length ? 
+  return users.length ? (
     <React.Fragment>
       {!search.showResults && (
         <div className="search-form">
@@ -53,7 +52,9 @@ const Search = () => {
       )}
       {search.showReset && <button onClick={e => handleReset(e)}>Reset</button>}
       {search.showResults && <Results {...results} />}
-    </React.Fragment> : <h2>...Loading</h2>
+    </React.Fragment>
+  ) : (
+    <h2>...Loading</h2>
   );
 };
 

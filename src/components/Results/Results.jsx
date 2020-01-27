@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import "./Results.scss";
 
-export default ({ recommendations, notRecommended }) =>
+const Results = ({ recommendations, notRecommended }) =>
   recommendations.length ? (
     <div className="results-container">
       <div className="results-container--recommended">
@@ -27,3 +28,10 @@ export default ({ recommendations, notRecommended }) =>
   ) : (
     <h2>Sorry, nothing was found, please try again.</h2>
   );
+
+  Results.propTypes = {
+    recommendations: PropTypes.arrayOf(PropTypes.object),
+    notRecommended: PropTypes.arrayOf(PropTypes.object),
+  }
+  
+export default Results;
